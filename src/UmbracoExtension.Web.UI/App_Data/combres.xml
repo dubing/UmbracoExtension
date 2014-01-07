@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  This file contains basic settings needed for most web apps.
+  For full Combres settings (with explanation), refer to the sample definition file: combres_full_with_annotation.xml
+  Also, refer to Combres' documentation: http://combres.codeplex.com/documentation	
+-->
+<combres xmlns='urn:combres'>
+  <filters>
+    <filter type="Combres.Filters.FixUrlsInCssFilter, Combres" />
+  </filters>
+  <!-- defaultDuration: How long you want to cache the css/js. 30 means 30days. -->
+  <!-- defaultVersion: You want to manage the version number by yourself or let Combres generate version number automatically. -->
+
+  <cssMinifiers>
+    <minifier name="yui" type="Combres.Minifiers.YuiCssMinifier, Combres">
+      <param name="CssCompressionType" type="string" value="StockYuiCompressor" />
+      <param name="RemoveComments" type="bool" value="true" />
+      <param name="ColumnWidth" type="int" value="-1" />
+    </minifier>
+  </cssMinifiers>
+
+  <!--
+    (Optional)
+    Description: 
+    + Declare all JavaScript minifier types in this section
+    + For each minifier, fully qualified type name must be specified
+    + Each minifier may have configuration settings (specific for each minifier type)
+      Check out the documentation of each minifier to know what configuration settings it supports
+    + By default, the SimpleObjectBinder is used to bind the parameters to actual properties
+      of the minifiers.  You can replace this default binder with your own implementation by 
+      specify the fully-qualified class name in the binderType attribute.
+  -->
+  <jsMinifiers>
+    <minifier name="yui" type="Combres.Minifiers.YuiJSMinifier, Combres">
+      <param name="IsVerboseLogging" type="bool" value="false" />
+      <param name="IsObfuscateJavascript" type="bool" value="true" />
+      <param name="PreserveAllSemicolons" type="bool" value="false" />
+      <param name="DisableOptimizations" type="bool" value="false" />
+      <param name="LineBreakPosition" type="int" value="-1" />
+    </minifier>
+  </jsMinifiers>
+
+  <resourceSets url="~/combres.axd"
+                defaultDuration="30"
+                defaultVersion="auto"
+                defaultDebugEnabled="auto"
+                defaultIgnorePipelineWhenDebug="true"
+                localChangeMonitorInterval="30"
+                remoteChangeMonitorInterval="60"
+                >
+    <resourceSet name="siteCss" type="css" minifierRef="yui">
+      <!-- put your css files at here-->
+      <resource path="~/css/main.css" />
+    </resourceSet>
+    <resourceSet name="siteJsTop" type="js" minifierRef="yui">
+      <!-- put your javascript files at here -->
+      <resource path="~/scripts/vendor/modernizr-2.6.2.min.js" />
+    </resourceSet>
+      
+    <resourceSet name="siteJsBottom" type="js" minifierRef="yui">
+      <!-- put your javascript files at here -->
+      <resource path="~/scripts/vendor/jquery-1.10.2.min.js" />
+      <resource path="~/scripts/vendor/knockout-3.0.0.js" />
+      <resource path="~/scripts/vendor/hogan-2.0.0.js" />
+      <resource path="~/scripts/vendor/jquery.easing.1.3.js" />
+      <resource path="~/scripts/vendor/jquery.selectbox-0.2.js" />
+      <resource path="~/scripts/vendor/knockout-postbox.min.js" />
+      <resource path="~/scripts/vendor/ko.template-engine.hogan-0.1.0.min.js" />
+      <resource path="~/scripts/vendor/skrollr.min.js" />
+      <resource path="~/scripts/app.js" />
+    </resourceSet>
+  </resourceSets> 
+</combres>
