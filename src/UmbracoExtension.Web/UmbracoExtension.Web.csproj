@@ -43,9 +43,6 @@
     <Reference Include="interfaces">
       <HintPath>..\packages\Umbraco6.1.6.1.0.1\lib\interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="log4net">
-      <HintPath>..\packages\log4net-mediumtrust.1.2.11.0\lib\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation">
       <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
@@ -91,7 +88,9 @@
     <Compile Include="WebAPI\DemoApiController.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AKQA.Common\AKQA.Common.csproj">

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using AKQA.Common.Unity;
+﻿using AKQA.Common.Unity;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
-using UnityLog4NetExtension.Log4Net;
+using UnityLoggingExtensions.Log4Net;
 
 
 namespace UmbracoExtension.Core.Unity
