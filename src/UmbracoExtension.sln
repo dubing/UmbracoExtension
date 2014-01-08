@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoExtension.Web.UI", "UmbracoExtension.Web.UI\UmbracoExtension.Web.UI.csproj", "{DA831F1A-5CF3-4601-9EC3-D6D22A9B5BAF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoExtension.Web", "UmbracoExtension.Web\UmbracoExtension.Web.csproj", "{88F9C0BF-C119-4ACD-BA33-862FB08D59E1}"
@@ -10,6 +12,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKQA.Common", "AKQA.Common\AKQA.Common.csproj", "{6731AD2F-065A-4F17-989F-DD3F9D4F2FED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoExtension.FM", "UmbracoExtension.FM\UmbracoExtension.FM.csproj", "{F6E4D560-B873-4EDA-8AEF-8B07747D0F64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{86CB782E-3E82-4319-AACD-71AC18F1F066}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
