@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoExtension.Web.UI", "UmbracoExtension.Web.UI\UmbracoExtension.Web.UI.csproj", "{DA831F1A-5CF3-4601-9EC3-D6D22A9B5BAF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoExtension.Web", "UmbracoExtension.Web\UmbracoExtension.Web.csproj", "{88F9C0BF-C119-4ACD-BA33-862FB08D59E1}"
@@ -20,7 +18,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{86CB78
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoExtension.Core.Test", "UmbracoExtension.Core.Test\UmbracoExtension.Core.Test.csproj", "{6FA8FFF5-D82F-4808-B388-2BE4D987C5D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EEDCB292-DBC1-4CEB-8B11-43F5E7CE1D92}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		UmbracoExtension.vsmdi = UmbracoExtension.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoExtension.Web.Test", "UmbracoExtension.Web.Test\UmbracoExtension.Web.Test.csproj", "{81039AF2-04BE-4634-949C-945E933F4AB8}"
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = UmbracoExtension.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -46,6 +58,14 @@ Global
 		{F6E4D560-B873-4EDA-8AEF-8B07747D0F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6E4D560-B873-4EDA-8AEF-8B07747D0F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6E4D560-B873-4EDA-8AEF-8B07747D0F64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FA8FFF5-D82F-4808-B388-2BE4D987C5D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA8FFF5-D82F-4808-B388-2BE4D987C5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA8FFF5-D82F-4808-B388-2BE4D987C5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA8FFF5-D82F-4808-B388-2BE4D987C5D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81039AF2-04BE-4634-949C-945E933F4AB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81039AF2-04BE-4634-949C-945E933F4AB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81039AF2-04BE-4634-949C-945E933F4AB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81039AF2-04BE-4634-949C-945E933F4AB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

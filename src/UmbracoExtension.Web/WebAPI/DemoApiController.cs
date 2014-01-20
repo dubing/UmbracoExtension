@@ -14,7 +14,5 @@ namespace UmbracoExtension.Web.WebAPI
             return "hello world";
         }
 
-
-
     }
 }

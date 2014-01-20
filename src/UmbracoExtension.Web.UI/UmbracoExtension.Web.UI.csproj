@@ -124,12 +124,6 @@
     <Content Include="App_Data\combres_minimal.xml" />
     <Content Include="css\main.css" />
     <Content Include="Web.config" />
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\AppStart.cs" />
